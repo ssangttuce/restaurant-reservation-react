@@ -1,0 +1,33 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hoverEffect {
+  cursor: pointer;
+
+  font-size: 15px;
+
+  width: 9em;
+  height: 3em;
+  max-width: 45%;
+  max-height: 85%;
+
+  background-color: #f5f3f4;
+  border: 1px solid black;
+  border-radius: 30em;
+
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.hoverEffect:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+input[id^='cancelItem-'] {
+  display: none;
+}
